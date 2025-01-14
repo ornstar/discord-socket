@@ -6,10 +6,10 @@ import keyboard
 async def handle_client(websocket):
   async for message in websocket:
     if message == "PUSH":
-      keyboard.press("space")
+      keyboard.press("MOUSE3")
       print("Push-to-talk activated")
     elif message == "RELEASE":
-      keyboard.release("space")
+      keyboard.release("MOUSE3")
       print("Push-to-talk deactivated")
 
 async def main():

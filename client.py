@@ -3,8 +3,8 @@ import asyncio
 import websockets
 import keyboard
 
-server_url = "ws://localhost:8765"
-key_to_monitor = "space"
+server_url = "ws://0.0.0.0:8765"
+key_to_monitor = "MOUSE3"
 
 async def send_key_events():
   async with websockets.connect(server_url) as websocket:
